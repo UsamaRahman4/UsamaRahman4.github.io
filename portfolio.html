@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Usama Rahman - Portfolio</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet"
+          href="styles.css">
+    <script src="scripts.js"
+            defer></script>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="#">Usama Rahman</a></h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Backend Developer & Software Architect</h1>
+            <p>Transforming ideas into scalable backend solutions that drive impactful software applications.</p>
+            <a href="#projects"
+               class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about"
+             class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an experienced backend developer with expertise in .NET Core, REST APIs, and database management.
+                Over the last 5+ years, I have successfully built and deployed complex systems for industries like
+                cybersecurity, prison management, and HR solutions. My passion is creating efficient, scalable, and
+                reliable backend systems to solve real-world challenges.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects"
+             class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="accordion">
+                <div class="accordion-header">Prison Management System</div>
+                <div class="accordion-content">
+                    <p>Developed a comprehensive solution using .NET Core and PostgreSQL, enabling effective management
+                        of inmate records and operations across multiple regions. This system is currently implemented
+                        in three out of four provinces in Pakistan, covering nearly 40 prisons. The user interface was
+                        designed to be simple and intuitive, allowing prison staff to operate it easily.</p>
+                    <div class="image-tabs">
+                        <ul class="tab-list">
+                            <li class="tab active"
+                                data-tab="prisoner-profile">Prisoner Profile</li>
+                            <li class="tab"
+                                data-tab="prisoner-searches">Prisoner Searches</li>
+                            <li class="tab"
+                                data-tab="dashboard">Dashboard</li>
+                            <li class="tab"
+                                data-tab="prisoner-transfers">Prisoner Transfers</li>
+                        </ul>
+                        <div class="tab-content">
+                            <img id="prisoner-profile"
+                                 src="./images/PrisonerProfile.png"
+                                 alt="Prisoner Profile"
+                                 class="active">
+                            <img id="prisoner-searches"
+                                 src="./images/PrisonerSearches.png"
+                                 alt="Prisoner Searches">
+                            <img id="dashboard"
+                                 src="./images/Sp-Dashboard.png"
+                                 alt="Dashboard">
+                            <img id="prisoner-transfers"
+                                 src="./images/TransferPrisons.png"
+                                 alt="Prisoner Transfers Module">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Management of prison employees and PMIS users</li>
+                                <li>Role-based access for different users</li>
+                                <li>Prisoner registration</li>
+                                <li>Visitor management system</li>
+                                <li>Cell assignment and accommodation tracking</li>
+                                <li>Medical records management</li>
+                                <li>Parole and release management</li>
+                                <li>Court production and hearing management</li>
+                                <li>Role-specific dashboards</li>
+                                <li>Reporting and analytics</li>
+                                <li>Automated notifications for various roles</li>
+                                <li>Comprehensive prisoner search functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">Ramper (POA&M Management System)</div>
+                <div class="accordion-content">
+                    <p>Ramper automates POA&M (Plan of Action and Milestones) management for cloud service providers.
+                        The system provides centralized workflows for managing and resolving security findings
+                        efficiently. I worked as a full-stack developer on Angular, C#, and MySQL, focusing on
+                        implementing different modules and ensuring effective automated and unit testing.</p>
+                    <div class="image-tabs">
+                        <ul class="tab-list">
+                            <li class="tab active"
+                                data-tab="system-dashboard">System Dashboard</li>
+                            <li class="tab"
+                                data-tab="poam-overview">POA&M Overview</li>
+                            <li class="tab"
+                                data-tab="milestones">Milestones</li>
+                        </ul>
+                        <div class="tab-content">
+                            <img id="system-dashboard"
+                                 src="./images/ramper/system_dashboard.png"
+                                 alt="System Dashboard"
+                                 class="active">
+                            <img id="poam-overview"
+                                 src="./images/ramper/poam_milestones.png"
+                                 alt="POA&M Overview">
+                            <img id="milestones"
+                                 src="./images/ramper/poam_milestones.png"
+                                 alt="Milestones">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>System vulnerability assessments</li>
+                                <li>Role-based access for different users</li>
+                                <li>Authentication and authorization using external sources</li>
+                                <li>Continuous monitoring of systems</li>
+                                <li>Integration with various system monitoring tools</li>
+                                <li>Email notifications for system events</li>
+                                <li>SSP (System Security Plan) records and maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">Auditor</div>
+                <div class="accordion-content">
+                    <p>Auditor is software for tracking and maintaining audits across different departments. It also
+                        manages processes related to audits, such as assignments, findings, and risk assessments.
+                        Initially developed in PHP 7.0, I led the upgrade to .NET 8.0. I worked as a full-stack
+                        developer using Angular, C#, and MySQL.</p>
+                    <div class="image-tabs">
+                        <ul class="tab-list">
+                            <li class="tab active"
+                                data-tab="auditor-dashboard">Dashboard</li>
+                            <li class="tab"
+                                data-tab="function-areas">Function Areas</li>
+                            <li class="tab"
+                                data-tab="kanban-board">Kanban Board</li>
+                        </ul>
+                        <div class="tab-content">
+                            <img id="auditor-dashboard"
+                                 src="./images/Auditor/Dashboard.png"
+                                 alt="Dashboard"
+                                 class="active">
+                            <img id="function-areas"
+                                 src="./images/Auditor/FunctionAreas.png"
+                                 alt="Function Areas">
+                            <img id="kanban-board"
+                                 src="./images/Auditor/Kanban.png"
+                                 alt="Kanban Board">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>User management</li>
+                                <li>Role-based access control</li>
+                                <li>Audit creation and tracking</li>
+                                <li>Digitalized function areas for 2021-2024</li>
+                                <li>Task management for assignments, NFRs (Non-Functional Requirements), and findings
+                                </li>
+                                <li>Kanban boards for process visualization</li>
+                                <li>Comprehensive dashboards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">QueTech (Queue Management System)</div>
+                <div class="accordion-content">
+                    <p>QueTech is a queue management solution for restaurants and banks. Developed using Angular and
+                        .NET Core, the system effectively manages queues, helping businesses optimize service times and
+                        improve customer satisfaction.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>User management</li>
+                                <li>Role-based access control</li>
+                                <li>Queue management for customers</li>
+                                <li>Ticket dashboards for monitoring queues</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">Biometric Attendance System</div>
+                <div class="accordion-content">
+                    <p>Developed for a factory, this biometric attendance system tracks employee attendance and
+                        integrates with an HR system to manage leaves and payroll. Built using .NET Core and Angular,
+                        the system ensures seamless tracking of attendance through biometric devices.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>User management</li>
+                                <li>Attendance management through biometric integration</li>
+                                <li>Leave management</li>
+                                <li>Payroll generation and tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills"
+             class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill">.NET Core & C#</div>
+                <div class="skill">REST APIs & Web APIs</div>
+                <div class="skill">Python & PostgreSQL</div>
+                <div class="skill">Angular, HTML, JavaScript</div>
+                <div class="skill">Microservices Architecture</div>
+                <div class="skill">Tools: Selenium, Git, JIRA, MongoDB, Redis</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"
+             class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to discuss a project or just want to say hello, feel free to reach out.</p>
+            <form id="contact-form">
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Your Name"
+                       required>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Your Email"
+                       required>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          placeholder="Your Message"
+                          required></textarea>
+                <button type="submit"
+                        class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Usama Rahman. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
